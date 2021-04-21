@@ -408,9 +408,6 @@ Feature: PXE boot a Retail terminal
     When I follow "Formulas" in the content area
     And I follow first "Bind" in the content area
     # direct zone example.org:
-    And I press "Remove Item" in fifth CNAME section
-    And I press "Remove Item" in fourth CNAME section
-    And I press "Remove Item" in third CNAME section
     And I press "Remove Item" in second CNAME section
     And I press "Remove Item" in first CNAME section
     # direct zone tf.local:
