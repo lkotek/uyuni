@@ -134,16 +134,16 @@ Feature: Setup SUSE Manager for Retail branch network
     When I follow "Formulas" in the content area
     And I follow first "Dhcpd" in the content area
     And I press "Add Item" in host reservations section
-    And I enter "pxeboot" in third reserved hostname field
-    And I enter the local IP address of "pxeboot" in third reserved IP field
-    And I enter the MAC address of "pxeboot_minion" in third reserved MAC field
+    And I enter "pxeboot" in first reserved hostname field
+    And I enter the local IP address of "pxeboot" in first reserved IP field
+    And I enter the MAC address of "pxeboot_minion" in first reserved MAC field
     And I click on "Save Formula"
     Then I should see a "Formula saved" text
     # bind:
     When I follow first "Bind" in the content area
     And I press "Add Item" in first A section
-    And I enter "pxeboot" in fourth A name field
-    And I enter the local IP address of "pxeboot" in fourth A address field
+    And I enter "pxeboot" in second A name field
+    And I enter the local IP address of "pxeboot" in second A address field
     And I click on "Save Formula"
     Then I should see a "Formula saved" text
 
