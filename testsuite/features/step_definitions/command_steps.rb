@@ -1502,7 +1502,6 @@ end
 When(/^I delete all the imported terminals$/) do
   terminals = read_terminals_from_yaml
   terminals.each do |terminal|
-    next if (terminal.include? 'minion') || (terminal.include? 'client')
     puts "Deleting terminal with name: #{terminal}"
     steps %(
       When I follow "#{terminal}" terminal
